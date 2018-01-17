@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Games</title>
+
+<meta name="author" content="CZT">
+<meta name="description" content="COD Zombies Tournaments">
+<meta name="keywords" content="Zombies, Call of Duty, Competition, Tournaments">
+<link rel="shortcut icon" href="favicon.ico" type="">
+
+<link rel="stylesheet" type="text/css" href="style/games.css">
+<link rel="stylesheet" type="text/css" href="style/nav.css">
+<link rel="stylesheet" type="text/css" href="style/backgrounds.css">
+<link rel="stylesheet" type="text/css" href="style/Login.css">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+<nav>
+  	<a href="#" class="nav-toggle-btn">&raquo;</a>
+
+  	<ul>
+  		<li><a href="index.html">Home</a></li>
+        <li><a class="current" href="games.html">Games</a></li>
+        <li><a href="survivalist.html">Survivalist</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Live Event</a></li>
+  	</ul>
+  		
+</nav>
+
+<div class="header">
+  <form action="includes/login.inc.php" method="POST">
+                    <input type="text" name="uid" placeholder="Username/Email">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <button type="submit">Login</button>
+                </form>
+                <a href="signup.php">Sign Up</a>
+  	<div class="header-title">COD Zombies Tournaments</div>
+</div>
+
+
+<div class="content game">
+  	<div class="item-1 style-4"><p class="frost1">ww2</p></div>
+
+    <div class="item-2 style-4"><p class="frost2">IW</p></div>
+
+    <div class="item-3 style-4"><p class="frost3">BO3</p></div>
+
+    <div class="item-4 style-4"><p class="frost4">BO2</p></div>
+
+    <div class="item-5 style-4"><p class="frost5">BO1</p></div>
+
+    <div class="item-6 style-4"><p class="frost6">WAW</p></div>
+</div>
+
+<!--Scripts-->
+<!--Nav-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">        
+    (function() {            
+        var bodyEl = $('body'),
+            navToggleBtn = bodyEl.find('.nav-toggle-btn');
+
+        navToggleBtn.on('click', function(e) {
+            bodyEl.toggleClass('active-nav');
+            e.preventDefault();
+        });       
+    })();
+</script>
+  
+</body>
+
+
+</html>

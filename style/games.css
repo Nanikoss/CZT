@@ -1,0 +1,429 @@
+.content{
+	background-color: rgba(10, 10, 10, 1);
+	transition: transform 1s ease;
+	display: grid;
+	text-align: center;
+	justify-content: space-evenly;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr 1fr;
+	padding: 10px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	align-content: center;
+	overflow: hidden;
+	bottom: 0;
+}
+
+/* placeholder image */
+
+.header{
+	background-image: url(http://s3.amazonaws.com/digitaltrends-uploads-prod/2017/04/call-of-duty-ww2-zombies-teaser.jpeg);
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	transition: transform 1s ease;
+}
+
+/*placeholder images*/
+
+.header-title{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+}
+
+.active-nav .content{
+	transform: translate3d(175px, 0, 0);
+}
+
+.active-nav .header{
+	transform: translate3d(175px, 0, 0);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.frost1{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/ww2.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost1:hover{
+	font-size: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url(../image/ww2.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+.frost2{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/iw.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost2:hover{
+	font-size: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url(../image/iw.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+.frost3{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/bo3.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost3:hover{
+	font-size: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url(../image/bo3.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+.frost4{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/bo2.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost4:hover{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url(../image/bo2.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+.frost5{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/bo.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost5:hover{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url(../image/bo.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+.frost6{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.0);
+	display: block;
+	background-image: url(../image/waw.png);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.frost6:hover{
+	font-size: 0;
+	line-height: 375px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url(../image/waw.png);
+	opacity: 1;
+	display: block;
+	transition: 1s ease;
+}
+
+/*placeholder images*/
+.item-1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-image: url(http://gameranx.com/wp-content/uploads/2017/08/Call-of-Duty-WWII-Nazi-Zombies-Reveal-Trailer.mp4_000054403.png);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;
+	margin: 25px 0px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+	transition: 1s ease;
+}
+
+.item-2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-image: url(https://www.primagames.com/media/images/news/COD_Infinite_Warfare_Zombies_in_Spaceland_Andre_in_Chromosphere.jpg);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;
+	margin: 25px 0px;	
+	overflow: hidden;	
+	transition: 1s ease;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.item-3{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-image: url(http://assets.vg247.com/current//2015/07/black_ops_3_zombies-1.jpg);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;	
+	margin: 25px 0px;	
+	overflow: hidden;
+	transition: 1s ease;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.item-4{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(https://i.ytimg.com/vi/dC37vZgPcbc/maxresdefault.jpg);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;
+	margin: 25px 0px;	
+	overflow: hidden;
+	transition: 1s ease;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.item-5{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(https://cdn.vox-cdn.com/thumbor/csWcQm9cFaPQl-GpMYbBjidECog=/0x0:1920x1080/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/54624529/black_ops_zombies.0.jpg);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;	
+	margin: 25px 0px;	
+	overflow: hidden;
+	transition: 1s ease;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.item-6{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-image: url(https://static.giantbomb.com/uploads/screen_kubrick/0/30/1094440-tr_codwawdlc_073009.jpg);
+	background-size: cover;
+
+	width: 550px;
+	height: 375px;	
+	margin: 25px 0px;	
+	overflow: hidden;
+	transition: 1s ease;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+/*placeholder images*/
+
+.item-1:hover , .item-2:hover , .item-3:hover , .item-4:hover , .item-5:hover , .item-6:hover {
+	transform: scale(1.05);
+	transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+
+	.item-1{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+	.item-2{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+	.item-3{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+	.item-4{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 4;
+		grid-row-end: 5;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+	.item-5{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 5;
+		grid-row-end: 6;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+	.item-6{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 6;
+		grid-row-end: 7;
+
+		width: 340px;
+		height: 231.82px;
+		overflow: hidden;
+	}
+
+
+
+	.frost1{
+		font-size: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		background-image: url(../image/ww2.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+
+	}
+
+	.frost2{
+		font-size: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		background-image: url(../image/iw.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.frost3{
+		font-size: 0;
+		line-height: 375px;
+		background-color: rgba(255, 255, 255, 0.5);
+		display: block;
+		background-image: url(../image/bo3.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.frost4{
+		font-size: 0;
+		line-height: 375px;
+		background-color: rgba(255, 255, 255, 0.5);
+		display: block;
+		background-image: url(../image/bo2.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.frost5{
+		font-size: 0;
+		line-height: 375px;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		background-image: url(../image/bo.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.frost6{
+		font-size: 0;
+		line-height: 375px;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		background-image: url(../image/waw.png);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.header{
+		height: 50px;
+	}
+
+	.header-title{
+		line-height: 50px;
+		font-size: 17px;
+	}
+}
